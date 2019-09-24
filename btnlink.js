@@ -21,17 +21,19 @@ document.addEventListener("DOMContentLoaded", function(){
 	var btnra6 = document.getElementById('btnlink');
 	var navra6 = document.getElementById('opendate');
 	var trangthai = "lan1";
-
+	var iconxoay6 = document.getElementById('iconbtnmoredeg6');
 	btnra6.onclick = function(){
 
 		if (trangthai == "lan1") {
 			console.log('lan 1');
 			trangthai = "lan2";
 			navra6.classList.add('datera');
+			iconxoay6.classList.add('iconxoay');
 		} else if(trangthai == "lan2"){
 			console.log('lan 2');
 			trangthai = "lan1";
 			navra6.classList.remove('datera');
+			iconxoay6.classList.remove('iconxoay');
 		}
 	}
 
