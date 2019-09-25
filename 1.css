@@ -4,10 +4,56 @@ body,html{
 	height: 100%;
 	/*background-color: gray;*/
 }
+.kmargin{
+	margin: 0 !important;
+}
+.module_title-03 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 button:focus{
 	outline: none !important;
 }
 @media(max-width: 660px){
+	.global_wrapper {
+		padding-top: 60px;
+	}
+/*--- about ------*/
+	.module_card-02 li {
+		margin-left: 20px;
+		width: calc(100% / 2 - 20px / 2);
+	}
+	.module_card-02 li:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.module_card-02 li:nth-child(n+3) {
+		margin-top: 40px;
+	}
+	.global_contents .gc_sub {
+		display: none;
+	}
+
+/*--------------------------------*/
+/*-------------------- gallery -------------*/
+.module_gallery-03 ul li {
+    width: calc(50% - 5px);
+}
+[class*="module_gallery"] ul li:nth-child(2n+1) {
+    margin-left: 0;
+}
+[class*="module_gallery"] ul li {
+    margin-left: 10px;
+}
+[class*="module_gallery"] ul li:nth-child(n+3) {
+    margin-top: 10px;
+}
+[class*="module_button-"] + [class*="module_button-"] {
+    margin-top: 40px;
+}
+
+/*------------------------------------------*/
+
 	.global_wrapper.slidewrapper{
 	    height: 401px;
     	padding-top: 40px !important;
@@ -382,6 +428,20 @@ body._open-lang .global_header .gh_links-01 li.ghl_lang button i::before {
 }*/
 
 @media (min-width: 768px){
+	/*----------------- hs tot nghiep ---------*/
+	.module_column-col1._order .img {
+		margin-left: 30px;
+		max-width: calc(50% - 20px);
+	}
+	.module_column-col1._left .img {
+		margin-right: 30px;
+		max-width: calc(50% - 20px);
+	}
+	.module_column-col1._left .img {
+		margin-right: 30px;
+		max-width: calc(50% - 20px);
+	}
+	/*---------------------------------*/
 /*	._only-SP {
 		display: none !important;
 	}
@@ -3437,4 +3497,38 @@ ul.module_list-01 li + li, ul.module_list-notes-01 li + li, ol.module_list-01 li
 }
 [class*="module_"]:not([class*="module_title"]):not([class*="module_button-"]) + p:not([class]){
 	margin-top: 40px;
+}
+
+
+
+/*------------- hs tot nghiep --------*/
+.module_column-col1._left .img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: calc(50% - 10px);
+}
+.module_column-col1._left::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.module_line-01 {
+    margin: 80px 0 !important;
+    border-color: rgba(26,75,143,0.3);
+}
+.module_column-col1._order .img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: calc(50% - 10px);
+}
+.module_column-col1._order::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
